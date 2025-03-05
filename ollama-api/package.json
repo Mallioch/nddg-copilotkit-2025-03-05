@@ -1,0 +1,27 @@
+{
+  "name": "govkit",
+  "version": "1.0.0",
+  "description": "Demo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "npx ts-node server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@copilotkit/react-core": "^1.5.20",
+    "@copilotkit/react-ui": "^1.5.20",
+    "@copilotkit/runtime": "^1.5.20",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.86.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
+  }
+}
