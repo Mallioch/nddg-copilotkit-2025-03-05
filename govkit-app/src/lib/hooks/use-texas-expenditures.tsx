@@ -9,7 +9,6 @@ type ExpendituresContextType = {
 const ExpendituresContext = createContext<ExpendituresContextType | undefined>(undefined);
   
 export const ExpendituresProvider = ({ children }: { children: ReactNode }) => {
-    console.log('children', children);
     const [expenditures, setExpenditures] = useState<Expenditure[]>([]);
     const [counties, setCounties] = useState<String[]>([]);
 
@@ -53,8 +52,6 @@ export const ExpendituresProvider = ({ children }: { children: ReactNode }) => {
         fetchStats();
     }, []);
 
-    console.log('updating copilot readable with this many items: ', expenditures.length)
-        
     return (
         <ExpendituresContext.Provider value={{ expenditures, counties }}>
           {children}

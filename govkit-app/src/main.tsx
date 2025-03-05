@@ -14,21 +14,21 @@ import PopupUI from './PopupUI.tsx';
 import Ollama from './Ollama.tsx';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <CopilotKit runtimeUrl="http://localhost:4000/copilotkit">
-      <ExpendituresProvider>
-        <BrowserRouter>
-        <TopNav />
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/basic-react" element={<BasicReact />} />
-          <Route path="/popup-ui" element={<PopupUI />} />
-          <Route path="/sidebar-ui" element={<SidebarUI />} />
-          <Route path="/chat-ui" element={<ChatUI />} />
-          <Route path="/ollama" element={<Ollama />} />
-        </Routes>
-        </BrowserRouter>
-      </ExpendituresProvider>
-    </CopilotKit>
-  </StrictMode>
+    <StrictMode>
+        <CopilotKit runtimeUrl="http://localhost:4000/copilotkit">
+            <ExpendituresProvider>
+                <BrowserRouter>
+                <TopNav />
+                <Routes>
+                    <Route path="/" element={<App />} />
+                    <Route path="/basic-react" element={<BasicReact />} />
+                    <Route path="/popup-ui" element={<PopupUI />} />
+                    <Route path="/sidebar-ui" element={<SidebarUI />} />
+                    <Route path="/chat-ui" element={<ChatUI />} />
+                    <Route path="/ollama" element={<Ollama />} />
+                </Routes>
+                </BrowserRouter>
+            </ExpendituresProvider>
+        </CopilotKit>
+    </StrictMode>
 )
